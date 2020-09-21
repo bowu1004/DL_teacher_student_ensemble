@@ -20,9 +20,13 @@ Why Student net performs better than if it is trained without the guidance of Te
 ![TS_explanation_01](./img/TS_explanation_01.png)
 
 ### 2.3  The Steps of Conducting Knowledge Distillation.
+
 There are three steps:
+
 （1）Define a larger model as Teacher net, and a smaller model as Student net.
+
 （2）Train Teacher net with training data.
+
 （3）Replace the label with the outputs of Teacher net; Train Student net with these outputs as the targets by minimizing the KL divergence or cross entropy.
 
 ## 3. Python Demo
@@ -222,11 +226,13 @@ teacher-student net acc:  **0.927**
 ```
 
 ### 3.2 Add Temperature and Lambda to Teacher-Student Net
-I've made small changes from [ref](https://github.com/johnkorn/distillation). Please check the folder of `ref_distillation-master`.
+I've made small changes from [ref](https://github.com/johnkorn/distillation). Please check the folder of `ref_distillation-master`. ☆ A kindly reminder though, you need to download the EMNIST data from [here](https://www.nist.gov/itl/products-and-services/emnist-dataset) and put them to `ref_distillation-master\data\matlab`.
 
 I pasted the markdown file from the ref above.
 ```
 Knowledge distillation experiments
+
+
 How to run the code
 Dependencies: Keras, Tensorflow, Numpy
 
